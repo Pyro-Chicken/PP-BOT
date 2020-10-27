@@ -153,28 +153,6 @@ bot.on("messageDelete", async function(message) {
 	LogChannel.send(MessageDeleteLog)
 
 })
-// bot.on("messageDeleteBulk", function(messages) {
-
-// 	let MessageDeleteBulkLog = new Discord.MessageEmbed()
-// 	.setTitle('Messages Deleted In Bulk!')
-// 	.setDescription(`Messages Deleted: ${messages.content}`)
-// 	.addField('Messages Sent By:', messages.author)
-// 	.addField('Deleted In:', messages.channel)
-// 	.addField('Deleted At:', messages.createdAt)
-// 	.setColor(red)
-
-
-// 	const LogChannel = messages.guild.channels.cache.find(c => c.name === 'logs')
-
-
-// 	if(!LogChannel){
-// 		messages.channel.send('Someone has deleted messages in bulk, but I am unable to log it as there is no Logs channel. In order to recieve logs please make a channel named "logs" (without the quotation marks)')
-// 		return;
-// 	}
-
-// 	LogChannel.send(MessageDeleteBulkLog)
-
-// })
 
 bot.on("messageUpdate", function(oldMessage, newMessage) {
 
